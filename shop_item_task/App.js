@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import './style/main.css';
 import PropTypes from 'prop-types';
-import ShopItemFunc from './components/shop_item_func';
+//import ShopItemFunc from './components/shop_item_func';
+import ShopItemClass from './components/shop_item_func';
 
 function App() {
 
@@ -23,7 +24,8 @@ function App() {
         <div className="highlight-overlay"></div>
       </div>
       <div className="window">
-        <ShopItemFunc item={item} />
+//        <ShopItemFunc item={item} />
+          <ShopItemClass item={item} />
       </div>
     </div>
   );
