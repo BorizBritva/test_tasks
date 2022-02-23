@@ -32,7 +32,7 @@ ShopItemFunc.propTypes = {
   brand: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
-  price: PropTypes.string
+  price: PropTypes.number
 }
 
 // class ShopItemClass extends React.Component {
@@ -72,7 +72,7 @@ ShopItemFunc.propTypes = {
 //   brand: PropTypes.string,
 //   title: PropTypes.string,
 //   description: PropTypes.string,
-//   price: PropTypes.string
+//   price: PropTypes.number
 // }
 
 export default ShopItemFunc;
