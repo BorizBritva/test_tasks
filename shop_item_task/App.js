@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 //import ShopItemFunc from './components/shop_item_func';
 import ShopItemClass from './components/shop_item_func';
 
-function App() {
+function App(r) {
 
   const item = {
     brand: "Tiger of Sweden",
