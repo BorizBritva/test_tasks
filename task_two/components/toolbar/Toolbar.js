@@ -9,16 +9,17 @@ function Toolbar(props) {
     <div className="toolbar toolbar-collapse">
       <ul className="toolbar-list">
         {filters.map( (item, index) => {
-          const items = {
-            name: item,
-            active: selected,
-            onClick: onSelectFilter
-          }
-          return <ToolbarItem key={index} items={items} onClick={onSelectFilter}/>
+          return <ToolbarItem key={index} name={item} active={selected} onClick={onSelectFilter}/>
         })}
       </ul>
     </div>
   )
+}
+
+Toolbar.propTypes = {
+  filters: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selected: PropTypes.string.isRequired,
+  onSelectFilter: PropTypes.func.isRequired
 }
 
 export default Toolbar;

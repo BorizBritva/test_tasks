@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ProjectsItem(props) {
-  const imgSrc = props.items
+  const {category, img} = props.items
 
   return(
     <li className="projects-item">
-      <img src={imgSrc} />
+      <img src={img} alt={category}/>
     </li>
   )
+}
+
+ProjectsItem.propTypes = {
+  items: PropTypes.object.isRequired
 }
 
 export default ProjectsItem;

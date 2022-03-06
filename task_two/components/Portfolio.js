@@ -5,7 +5,7 @@ import Toolbar from './toolbar/Toolbar';
 import ProjectsList from './projects/ProjectsList';
 
 function Portfolio(props) {
-  const {filters, selected, projects} = props.items;
+  const {filters, selected, projects} = props.items
   const [select, setSelected] = useState(selected)
 
   const handleSelected = (e) => {
@@ -24,6 +24,10 @@ function Portfolio(props) {
       <ProjectsList items={resProjects}/>
     </div>
   )
+}
+
+Portfolio.propTypes = {
+  items: PropTypes.object.isRequired
 }
 
 export default Portfolio;

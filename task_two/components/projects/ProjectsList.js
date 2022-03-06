@@ -9,13 +9,17 @@ function ProjectsList(props) {
     <div className="projects projects-collapse">
       <ul className="projects-list">
         {
-          imgs.map((src, index) => {
-            return <ProjectsItem key={index} items={src.img}/>
+          imgs.map((item, index) => {
+            return <ProjectsItem key={index} items={item}/>
           })
         }
       </ul>
     </div>
   )
+}
+
+ProjectsList.propTypes = {
+  items: PropTypes.array.isRequired
 }
 
 export default ProjectsList;
