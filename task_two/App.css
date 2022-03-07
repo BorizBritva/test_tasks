@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
   align-items: center;
 }
 
-.portfolio li {
+.portfolio li, .product-list-grid li, .product-card-grid li{
   list-style-type: none;
 }
 
@@ -47,4 +51,111 @@
 .projects-item {
   margin: 20px;
   cursor: pointer;
+}
+
+.product-list-grid, .product-card-grid {
+  margin: 20px 15px;
+  padding: 0px;
+  display: flex;
+}
+
+.product-list-grid {
+  flex-direction: column;
+}
+
+.product-card-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.product-list-item img {
+  flex-basis: 20%;
+  max-width: 20%;
+  height: 100%;
+}
+
+.product-list-desc, .product-list-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 40%;
+}
+
+.product-list-name, .product-list-price, .product-card-price,  .product-card-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product-list-price, .to-cart, .product-card-price{
+  color: red;
+}
+
+.product-list-color {
+  font-size: 20px;
+}
+
+.to-cart {
+  background-color: white;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.to-cart:hover {
+  color: white;
+  background-color: red;
+}
+
+.product-card {
+  margin: 40px 20px 70px 20px;
+  flex-basis: 30%;
+  position: relative;
+}
+
+.product-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  width: 70%;
+}
+
+.product-card-item img {
+  width: 100%;
+}
+
+.product-card-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-more {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card-name {
+  margin-bottom: 7px;
+}
+
+.product-card-color {
+  font-size: 20px;
 }
