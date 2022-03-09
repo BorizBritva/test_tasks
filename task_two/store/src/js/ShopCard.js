@@ -1,8 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 function ShopCard(props) {
-  const {name, price, color, img}=props.items;
+  const {name, price, color, img} = props.items;
 
   return (
     <li className="product-card">

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import Toolbar from './toolbar/Toolbar';
-import ProjectsList from './projects/ProjectsList';
+import Toolbar from './Toolbar';
+import ProjectsList from './ProjectsList';
 
 function Portfolio(props) {
   const {filters, selected, projects} = props.items

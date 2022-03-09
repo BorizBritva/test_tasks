@@ -1,11 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-function ToolbarItem(props) {
-  const {name, active}=props;
+function ToolbarItem({name, active, onClick}) {
 
   const eventClick = () => {
-    props.onClick(props)
+    onClick({name, active, onClick})
   }
 
   return(

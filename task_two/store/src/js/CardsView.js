@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import ShopCard from './ShopCard';
+import PropTypes from 'prop-types';
 
-function CardsView(props) {
-  const products=props.items;
+function CardsView({products}) {
 
   return (
     <div className="product-card-wrap">
@@ -19,7 +17,7 @@ function CardsView(props) {
 }
 
 CardsView.propTypes = {
-  items: PropTypes.array.isRequired
+  products: PropTypes.array.isRequired
 }
 
 export default CardsView;

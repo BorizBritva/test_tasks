@@ -1,9 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import ToolbarItem from './ToolbarItem';
 
-function Toolbar(props) {
-  const {filters, selected, onSelectFilter} = props;
+function Toolbar({filters, selected, onSelectFilter}) {
 
   return(
     <div className="toolbar toolbar-collapse">

@@ -1,9 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import ShopItem from './ShopItem';
 
-function ListView(props) {
-  const products=props.items;
+function ListView({products}) {
 
   return (
     <div className="product-list-wrap">
@@ -19,7 +17,7 @@ function ListView(props) {
 }
 
 ListView.propTypes = {
-  items: PropTypes.array.isRequired
+  products: PropTypes.array.isRequired
 }
 
 export default ListView;

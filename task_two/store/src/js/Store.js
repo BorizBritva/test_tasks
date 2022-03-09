@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import CardsView from './product_card/CardsView';
-import ListView from './product_list/ListView';
-import IconSwitch from './icons_switch/IconSwitch';
+import CardsView from './CardsView';
+import ListView from './ListView';
+import IconSwitch from './IconSwitch';
 
-function Store(props) {
-  const product=props.items;
+function Store({products}) {
   const [icon, setIcons] = useState("view_list")
 
   const handleSwitch = () => {
@@ -17,13 +16,13 @@ function Store(props) {
   return (
     <>
       <IconSwitch icon={icon} onSwitch={handleSwitch}/>
-      {icon==="view_module" ? <ListView items={product} /> : <CardsView items={product}/>}
+      {icon==="view_module" ? <ListView products={products} /> : <CardsView products={products}/>}
     </>
   )
 }
 
 Store.propTypes = {
-  items: PropTypes.array.isRequired
+  products: PropTypes.array.isRequired
 }
 
 export default Store;
