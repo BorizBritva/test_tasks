@@ -20,7 +20,7 @@ Listing.defaultProps = {
 }
 
 Listing.propTypes = {
-  data: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired
 }
 
 export default Listing
